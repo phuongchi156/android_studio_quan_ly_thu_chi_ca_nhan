@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="#f0f0"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="Sửa"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <EditText
+        android:id="@+id/edtsuaten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+    <EditText
+        android:id="@+id/edtsuatien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </EditText>
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnluu"
+            android:paddingRight="5dp"
+            android:text="Lưu"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:background="@color/btnSignUp"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnhuy"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:text="Hủy"
+            android:textStyle="bold"
+            android:background="@color/btnSignIn"
+            android:textColor="#ffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

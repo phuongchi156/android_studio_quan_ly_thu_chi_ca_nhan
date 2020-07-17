@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/edtphone"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="11dp"
+            android:hint="Số điện thoại"
+            android:inputType="phone"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtname"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:autoSizeMaxTextSize="11dp"
+            android:hint="Họ và Tên"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:outlineAmbientShadowColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/edtpass"
+            android:hint="Mật khẩu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:inputType="textPassword"
+            android:outlineSpotShadowColor="@android:color/black"
+            android:singleLine="true"/>
+
+        <Button
+            android:backgroundTint="@color/btnSignUp"
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:enabled="true"
+            android:shadowRadius="@integer/config_navAnimTime"
+            android:text="Đăng Ký"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>
+

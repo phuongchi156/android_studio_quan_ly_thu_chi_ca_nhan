@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_home">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/tlb1"
+            android:elevation="4dp"
+            android:background="#3399FF"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            >
+            <!--        <ImageView-->
+            <!--            android:layout_width="30dp"-->
+            <!--            android:layout_height="30dp"-->
+            <!--            android:id="@+id/imageMenu"-->
+            <!--            android:contentDescription="@string/app_name"-->
+            <!--            android:src="@drawable/ic_menu"-->
+            <!--            android:tint="@color/cardview_light_background"/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Báo Cáo"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:id="@+id/textTile"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+                <TableLayout
+                    android:orientation="vertical"
+                    android:scrollbars="vertical"
+                    android:layout_below="@id/tlb1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/tb1"
+                    android:background="#EFEFEF">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/btnthu"
+                            android:layout_width="400dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="fitCenter"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/bgthu">
+
+                        </ImageButton>
+
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Báo Cáo Thu"
+                            android:textSize="20dp"
+                            android:layout_gravity="center">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/btnchi"
+                            android:layout_width="400dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="fitCenter"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/bgchi">
+
+                        </ImageButton>
+
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Báo Cáo Chi"
+                            android:textSize="20dp"
+                            android:layout_gravity="center">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/btnbieudo"
+                            android:layout_width="400dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="fitCenter"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/bgbieudo">
+
+                        </ImageButton>
+
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biểu Đồ"
+                            android:textSize="20dp"
+                            android:layout_gravity="center">
+
+                        </TextView>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/btnmuctieu"
+                            android:layout_width="400dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginRight="5dp"
+                            android:scaleType="fitCenter"
+                            android:background="#FFFFFF"
+                            app:srcCompat="@drawable/bgmuctieu">
+
+                        </ImageButton>
+
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mục tiêu"
+                            android:textSize="20dp"
+                            android:layout_gravity="center">
+
+                        </TextView>
+
+                    </TableRow>
+                </TableLayout>
+            </ScrollView>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
